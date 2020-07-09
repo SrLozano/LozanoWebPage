@@ -1,0 +1,71 @@
+//Left Container for links 
+.main-tab{
+    width: 20%;
+    height: 90%;
+    margin: 5%;
+    background-color: rgb(50, 72, 244);
+    border-radius: 22px;
+    color: white;
+}
+
+//Individual parts of the left tab
+
+//Profile picture
+.face-image{
+    height: 20%;
+}
+
+.profile-picture{
+    height: 6em;
+    width: 6em;
+    border-radius: 100%;
+    margin: 10%;
+    border: 0.2em solid white
+}
+
+//Jobs
+.name{
+    height: 15%;
+}
+
+.name-font{
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.job{
+    text-transform: uppercase;  
+    margin-left: 10%;
+    font-size: large;
+}
+
+//Links
+.page-links{
+    height: 50%;
+}
+
+.category{
+    font-size: large;
+    margin-top: 3.5%;
+}
+
+.icon{
+    height: 1.5em;
+    width: 1.5em;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+//Social media links
+.social-media{
+    height: 15%;
+    text-align: center;
+}
+
+.social-icon{
+    height: 2em;
+    width: 2em;
+    margin: 5%;
+}
