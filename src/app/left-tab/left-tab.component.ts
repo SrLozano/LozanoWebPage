@@ -9,6 +9,7 @@ import * as myGlobals from '../../globals'; //Global variables
 })
 export class LeftTabComponent implements OnInit {
 
+  //Importing the globals variables
   name = myGlobals.name;
   job = myGlobals.job;
   constructor() { }

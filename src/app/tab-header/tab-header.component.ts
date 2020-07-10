@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TabHeaderComponent implements OnInit {
 
+  //Inputs means that is a variable that comes from the parent
   @Input() public parentData;
   constructor() { }
 
