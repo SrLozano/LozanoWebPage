@@ -1,6 +1,6 @@
 <!--The container contains the whole set of tabs-->
 <div class="container">
-    <!--The first tab is set to -->
+    <!--The first tab is set to containt the home-->
     <div class="home">
         <div class="container_name">
             <div class="name">
@@ -14,7 +14,14 @@
             <button mat-raised-button color="warn" style="margin-right:20%; padding-left: 3%; padding-right: 3%;">Ver portfolio</button>
             <button mat-raised-button style="padding-left: 3%; padding-right: 3%;">Contrátame</button>
         </div>
+    </div>
 
+    <div class="about-me">
+        <app-tab-header [parentData]="about"></app-tab-header>
+    </div>
+
+    <div class="about-me">
+        <app-tab-header [parentData]="skills"></app-tab-header>
     </div>
 </div>
 

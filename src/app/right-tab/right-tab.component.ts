@@ -11,6 +11,9 @@ export class RightTabComponent implements OnInit {
   name = myGlobals.name;
   job = myGlobals.job;
   description = myGlobals.description;
+  public about = "About me"
+  public skills = "My skills"
+
 
   constructor() { }
 

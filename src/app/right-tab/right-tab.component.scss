@@ -8,7 +8,7 @@
     vertical-align: top;
 }
 
-//The classes for the card set to fix the home
+//The classes for the card set to fit the home
 .home{
     background-color: rgb(50, 72, 244);
     height: 90%;
@@ -43,4 +43,13 @@
 .buttons{
     margin-left: 10%;
     margin-right: 10%;
+}
+
+//The classes for the card set to fix the about me
+.about-me{
+    background-color: white;
+    color: black;
+    height: 70%;
+    border-radius: 22px;
+    margin-top: 5%;
 }
