@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LeftTabComponent } from './left-tab/left-tab.component';
+import { RightTabComponent } from './right-tab/right-tab.component';
+import {MatButtonModule} from '@angular/material/button'; 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeftTabComponent
+    LeftTabComponent,
+    RightTabComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

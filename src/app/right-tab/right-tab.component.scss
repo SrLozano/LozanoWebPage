@@ -1,0 +1,46 @@
+//The full page is organised in two components, the right one and the left one
+.container{
+    display: inline-block;
+    width: 65%;
+    margin-top: 5%;
+    margin-right: 5%;
+    height: 100%;
+    vertical-align: top;
+}
+
+//The classes for the card set to fix the home
+.home{
+    background-color: rgb(50, 72, 244);
+    height: 90%;
+    border-radius: 22px;
+    color: white;
+    position: relative;
+}
+
+.container_name{
+    height: 65%;
+    position: relative;
+}
+
+.name{
+    font-size: 4.5em;
+    line-height: 1em;
+    position: absolute;
+    bottom: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: bold;
+}
+
+.description{
+    position: absolute;
+    bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.buttons{
+    margin-left: 10%;
+    margin-right: 10%;
+}

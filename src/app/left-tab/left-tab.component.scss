@@ -6,6 +6,7 @@
     background-color: rgb(50, 72, 244);
     border-radius: 22px;
     color: white;
+    display: inline-block;
 }
 
 //Individual parts of the left tab
@@ -49,6 +50,7 @@
 .category{
     font-size: large;
     margin-top: 3.5%;
+    cursor: pointer;
 }
 
 .icon{
@@ -68,4 +70,5 @@
     height: 2em;
     width: 2em;
     margin: 5%;
+    cursor: pointer;
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as myGlobals from '../../globals'; //Global variables
 
+
 @Component({
   selector: 'app-left-tab',
   templateUrl: './left-tab.component.html',
