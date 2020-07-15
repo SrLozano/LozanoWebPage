@@ -18,6 +18,33 @@
 
     <div class="about-me">
         <app-tab-header [parentData]="about"></app-tab-header>
+        <div class="about-photo">
+            <img class="profile-picture" src="../../assets/images/cara-hombre-sonriendo.jpg">
+        </div>
+        <div class="about-text">
+            <div class="about-hello">
+                Hello,
+            </div>
+            <div class="about-description">
+                {{about_description}}
+            </div>
+            <div class="about-data">
+                <div class="about-data-left"> 
+                    <span style="color: rgb(68, 68, 68);"><b>Name:</b></span> Blas de Lezo
+                    <br>
+                    <span style="color: rgb(68, 68, 68);"><b>Birthday:</b></span> 3-February-1689
+                </div>
+                <div class="about-data-right">
+                    <span style="color: rgb(68, 68, 68);"><b>Location:</b></span> Vizcaya
+                    <br>
+                    <span style="color: rgb(68, 68, 68);"><b>Email:</b></span> blas@marina.españa
+                </div>
+            </div>
+            <div class="about-buttons">
+                <button mat-raised-button color="warn" style="margin-right:20%; padding-left: 3%; padding-right: 3%;">Descarga mi CV</button>
+                <button mat-raised-button color="primary" style="padding-left: 3%; padding-right: 3%;">Contratame</button>
+            </div>
+        </div>
     </div>
 
     <div class="about-me">

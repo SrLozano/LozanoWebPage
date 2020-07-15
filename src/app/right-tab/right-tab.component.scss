@@ -48,8 +48,66 @@
 //The classes for the card set to fix the about me
 .about-me{
     background-color: white;
-    color: black;
     height: 70%;
     border-radius: 22px;
     margin-top: 5%;
+}
+
+.about-photo{
+    width: 35%;
+    height: 70%;
+    display: inline-block;
+}
+
+.profile-picture{
+    height: 12em;
+    width: 12em;
+    border-radius: 100%;
+    margin: 19%;
+    margin-top: 7%;
+    border: 0.2em solid white
+}
+
+.about-text{
+    width: 60%;
+    margin-right: 5%;
+    height: 70%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-hello{
+    margin-top: 7%;
+    font-size: 3em;
+    font-weight: bold;
+    height: 13%;
+}
+
+.about-description{
+    //background-color: yellow;
+    height: 30%;
+    color: rgb(177, 178, 177);
+}
+
+.about-data{
+    height: 20%;
+    color: rgb(177, 178, 177);
+}
+
+.about-data-left{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-data-right{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about-buttons{
+    height: 30%;
 }
