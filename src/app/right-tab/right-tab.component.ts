@@ -14,8 +14,12 @@ export class RightTabComponent implements OnInit {
   about_description = myGlobals.about_description;
   
   //Binding variables
-  public about = "About me"
-  public skills = "My skills"
+  public about = "Sobre mi"
+  public education = "Educación"
+  public skills = "Habilidades"
+  public rewards = "Reconocimientos"
+  public experience = "Experiencia"
+  public contact = "Contacto"
 
   constructor() { }
 

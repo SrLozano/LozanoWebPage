@@ -18,7 +18,7 @@
 }
 
 .container_name{
-    height: 65%;
+    height: 72%;
     position: relative;
 }
 
@@ -26,9 +26,10 @@
     font-size: 4.5em;
     line-height: 1em;
     position: absolute;
-    bottom: 30%;
+    bottom: 40%;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 1%;
     font-weight: bold;
 }
 
@@ -37,7 +38,9 @@
     bottom: 10%;
     margin-left: 10%;
     margin-right: 10%;
-
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.1em;
 }
 
 .buttons{
@@ -84,14 +87,14 @@
 }
 
 .about-description{
-    //background-color: yellow;
     height: 30%;
-    color: rgb(177, 178, 177);
+    color: rgb(150, 150, 150);
+    text-align: justify;
 }
 
 .about-data{
     height: 20%;
-    color: rgb(177, 178, 177);
+    color: rgb(150, 150, 150);
 }
 
 .about-data-left{
@@ -110,4 +113,8 @@
 
 .about-buttons{
     height: 30%;
+}
+
+.last{
+    margin-bottom: 5%;
 }

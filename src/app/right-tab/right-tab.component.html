@@ -7,7 +7,7 @@
                 Soy {{name}}
             </div>
             <div class="description">
-                {{description}}
+                <p>{{description}}</p>
             </div>
         </div>
         <div class="buttons">
@@ -23,19 +23,19 @@
         </div>
         <div class="about-text">
             <div class="about-hello">
-                Hello,
+                Hola,
             </div>
             <div class="about-description">
                 {{about_description}}
             </div>
             <div class="about-data">
                 <div class="about-data-left"> 
-                    <span style="color: rgb(68, 68, 68);"><b>Name:</b></span> Blas de Lezo
+                    <span style="color: rgb(68, 68, 68);"><b>Nombre:</b></span> Blas de Lezo
                     <br>
-                    <span style="color: rgb(68, 68, 68);"><b>Birthday:</b></span> 3-February-1689
+                    <span style="color: rgb(68, 68, 68);"><b>Cumpleaños:</b></span> 3-February-1689
                 </div>
                 <div class="about-data-right">
-                    <span style="color: rgb(68, 68, 68);"><b>Location:</b></span> Vizcaya
+                    <span style="color: rgb(68, 68, 68);"><b>Localización:</b></span> Vizcaya
                     <br>
                     <span style="color: rgb(68, 68, 68);"><b>Email:</b></span> blas@marina.españa
                 </div>
@@ -48,7 +48,23 @@
     </div>
 
     <div class="about-me">
+        <app-tab-header [parentData]="education"></app-tab-header>
+    </div>
+
+    <div class="about-me">
         <app-tab-header [parentData]="skills"></app-tab-header>
+    </div>
+
+    <div class="about-me">
+        <app-tab-header [parentData]="rewards"></app-tab-header>
+    </div>
+
+    <div class="about-me">
+        <app-tab-header [parentData]="experience"></app-tab-header>
+    </div>
+
+    <div class="about-me last">
+        <app-tab-header [parentData]="contact"></app-tab-header>
     </div>
 </div>
 

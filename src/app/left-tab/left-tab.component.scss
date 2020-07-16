@@ -9,6 +9,10 @@
     display: inline-block;
 }
 
+span{
+    vertical-align: text-top;
+}
+
 //Individual parts of the left tab
 
 //Profile picture
@@ -54,8 +58,8 @@
 }
 
 .icon{
-    height: 1.5em;
-    width: 1.5em;
+    height: 1.4em;
+    width: 1.4em;
     margin-left: 10%;
     margin-right: 5%;
 }
