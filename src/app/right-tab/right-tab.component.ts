@@ -20,6 +20,7 @@ export class RightTabComponent implements OnInit {
   public rewards = "Reconocimientos"
   public experience = "Experiencia"
   public contact = "Contacto"
+  public main_skills = "Principales habilidades"
 
   constructor() { }
 
