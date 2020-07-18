@@ -116,7 +116,16 @@
 }
 
 .last{
-    margin-bottom: 5%;
+    margin-bottom: 4%;
+}
+
+//The classes for the card set to fix the timeline
+.time{
+    background-color: white;
+    height: auto;
+    border-radius: 22px;
+    margin-top: 5%;
+    font-size: 1em;
 }
 
 //The classes for the card set to fix the education
@@ -125,4 +134,41 @@
     height: auto;
     border-radius: 22px;
     margin-top: 5%;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.skill-set{
+    margin-left: 7%;
+    margin-top: 7%;
+}
+
+.skill-title{
+    font-size: 2em;
+    font-weight: bold;
+    height: 13%;
+    color: rgb(50, 72, 244);
+}
+
+.skill-title-left{
+    display: inline-block;
+    width: 50%;
+    margin-top: 2%;
+    vertical-align: top;
+}
+.skill-title-right{
+    display: inline-block;
+    width: 50%;
+    margin-top: 2%;
+    vertical-align: top;
+}
+.flag{
+    width: 7%;
+}
+
+.skill-set h2{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 1.7%;
+    padding-left: 2%;
 }

@@ -47,15 +47,81 @@
         </div>
     </div>
 
-    <div class="education">
+    <div class="time">
         <app-tab-header [parentData]="education"></app-tab-header>
         <app-timeline></app-timeline>
         <br>
         
     </div>
 
-    <div class="about-me">
+    <!--This tab is dedicated to the skill set-->
+    <div class="education">
         <app-tab-header [parentData]="skills"></app-tab-header>
+
+        <div class="skill-set">
+            <div class="skill-title">Technical Skills</div>
+                <div class="skill-title-left">
+                    <h2>Destacados</h2>
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML/CSS/JavaScript</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <div class="skill-title-right">
+                    <h2>Especialización</h2>
+                    <ul>
+                        <li>Inteligencia Artificial</li>
+                        <li>Computación</li>
+                        <li>Ingeniería del software</li>
+                    </ul>
+                </div>
+                <div class="skill-title-left">
+                    <h2>Lenguajes y frameworks</h2>
+                    <ul>
+                        <li>Angular</li>
+                        <li>SQL</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>jQuery</li>
+                        <li>Bash</li>
+                        <li>Assembly</li>
+                    </ul>
+                </div>
+                <div class="skill-title-right">
+                    <h2>Herramientas y sistemas </h2>
+                    <ul>
+                        <li>Linux</li>
+                        <li>Git</li>
+                        <li>MacOs</li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="skill-set">
+            <div class="skill-title">Soft Skills</div>
+            <div class="skill-title-left">
+                <ul>
+                    <li>Trabajo en equipo</li>
+                    <li>Resiliencia</li>
+                </ul>
+            </div>
+            <div class="skill-title-right">
+                <ul>
+                    <li>Organización</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skill-set">
+            <div class="skill-title">Idiomas</div>
+            <br>
+            <img class="flag" src="../../assets/icons/uk.png">
+            <h2> Inglés, B2 - First</h2>
+            <br>
+            <img class="flag last" src="../../assets/icons/spain.png">
+            <h2> Español, Nativo</h2>
+        </div>
     </div>
 
     <div class="about-me">
