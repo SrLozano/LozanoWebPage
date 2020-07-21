@@ -181,4 +181,74 @@
     margin-top: 5%;
     font-size: 1.1em;
     line-height: 1.5em;
+    color: white;
+}
+
+.main-skill{
+    width: 25%;
+    display: inline-block;
+}
+
+.main-skill img{ //This is to align a picture in the middte of a div
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.text-skill{
+    width: 100%;
+    display: inline-block;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 7%;
+}
+
+.skill-picture{
+    height: 20%;
+    width: 25%;
+    padding-top: 20%;
+    padding-bottom: 13%;
+    cursor: pointer;
+}
+
+//The classes for the card set to fix the experience
+.experience{
+    background-color: white;
+    height: auto;
+    border-radius: 22px;
+    margin-top: 5%;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    padding-bottom: 2%;
+}
+
+.post-experience{
+    width: 30%;
+    margin-top: 5%;
+    display: inline-block;   
+}
+
+.left-post{
+    margin-left: 13%;
+    margin-right: 7%;
+}
+
+.right-post{
+    margin-right: 20%;
+    vertical-align: top;
+}
+
+.post-picture{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 5%;
+    margin-bottom: 5%;
+}
+
+.text-post{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: justify;
 }

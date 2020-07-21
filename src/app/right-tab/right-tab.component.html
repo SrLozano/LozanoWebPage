@@ -54,6 +54,29 @@
         
     </div>
 
+    <!--This tab is dedicated to the main skill set-->
+    <div class="main-skills">
+        <div class="main-skill">            
+            <img class="skill-picture" src="../../assets/icons/python.png">
+            <div class="text-skill"> Python </div>
+        </div>
+        <div class="main-skill">
+            <img class="skill-picture" src="../../assets/icons/ai.png">
+            <div class="text-skill"> Artificial Intelligence</div>
+        </div>
+        <div class="main-skill">
+            <img class="skill-picture" src="../../assets/icons/social.png">
+            <div class="text-skill"> Teamwork</div>
+        </div>
+        <div class="main-skill">
+            <img class="skill-picture" src="../../assets/icons/linux.png">
+            <div class="text-skill"> Linux</div>
+
+        </div>
+        
+       
+    </div>
+
     <!--This tab is dedicated to the skill set-->
     <div class="education">
         <app-tab-header [parentData]="skills"></app-tab-header>
@@ -124,16 +147,21 @@
         </div>
     </div>
 
-    <div class="main-skills">
-        <app-tab-header [parentData]="main_skills"></app-tab-header>
-    </div>
-
     <div class="about-me">
         <app-tab-header [parentData]="rewards"></app-tab-header>
     </div>
 
-    <div class="about-me">
+    <!--This tab is dedicated to the experience tab-->
+    <div class="experience">
         <app-tab-header [parentData]="experience"></app-tab-header>
+        <div class="post-experience left-post">
+            <img class ="post-picture" (click)="openDialog()" src="../../assets/images/t3f_icon_deg.png">
+            <span class="text-post">Voluntario evento tecnológico T3chfest</span>
+        </div>
+        <div class="post-experience right-post">
+            <img class="post-picture" src="../../assets/images/uc3m.jpg">
+            <span class="text-post">Profesor particular</span>
+        </div>
     </div>
 
     <div class="about-me last">

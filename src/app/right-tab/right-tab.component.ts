@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as myGlobals from '../../globals'; //Global variables
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-right-tab',
@@ -22,9 +23,23 @@ export class RightTabComponent implements OnInit {
   public contact = "Contacto"
   public main_skills = "Principales habilidades"
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
+  //Function to open the popup
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogContentExampleDialog);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
   ngOnInit(): void {
   }
 
 }
+
+@Component({
+  selector: 'dialog-content-example-dialog',
+  templateUrl: 'dialog-content-example-dialog.html',
+})
+export class DialogContentExampleDialog {}
