@@ -23,6 +23,7 @@ export class RightTabComponent implements OnInit {
   public contact = "Contacto"
   public main_skills = "Principales habilidades"
 
+
   constructor(public dialog: MatDialog) { }
 
   //Function to open the popup

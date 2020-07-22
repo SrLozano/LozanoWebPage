@@ -55,6 +55,17 @@ span{
     font-size: large;
     margin-top: 3.5%;
     cursor: pointer;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.category:hover{
+    -ms-transform: scale(1.15); /* IE 9 */
+    -webkit-transform: scale(1.15); /* Safari 3-8 */
+    transform: scale(1.15); 
+    //background-color: blue; //Transition to another color
 }
 
 .icon{
@@ -75,4 +86,15 @@ span{
     width: 2em;
     margin: 5%;
     cursor: pointer;
+    -webkit-transition-duration: 1.5s;
+    -moz-transition-duration: 1.5s;
+    -o-transition-duration: 1.5s;
+    transition-duration: 1.5s;
 }
+
+.social-icon:hover {
+    -webkit-transform : rotate(360deg) scale(1.4); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform     : rotate(360deg) scale(1.4); /* IE 9 */
+    transform         : rotate(360deg) scale(1.4); /* Firefox 16+, IE 10+, Opera */
+}
+
