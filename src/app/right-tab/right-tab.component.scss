@@ -235,7 +235,7 @@
 .post-experience{
     width: 30%;
     margin-top: 5%;
-    display: inline-block;   
+    display: inline-block;
 }
 
 .left-post{
@@ -250,11 +250,13 @@
 
 .post-picture{
     width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
     border-radius: 5%;
     margin-bottom: 5%;
+    cursor: pointer;
 }
 
 .text-post{
