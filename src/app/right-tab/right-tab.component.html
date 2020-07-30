@@ -78,51 +78,59 @@
     </div>
 
     <!--This tab is dedicated to the skill set-->
-    <div class="education">
+    <div class="skills">
         <app-tab-header [parentData]="skills"></app-tab-header>
 
-        <div class="skill-set">
-            <div class="skill-title">Technical Skills</div>
-                <div class="skill-title-left">
-                    <h2>Destacados</h2>
-                    <ul>
-                        <li>Python</li>
-                        <li>HTML/CSS/JavaScript</li>
-                        <li>C</li>
-                    </ul>
-                </div>
-                <div class="skill-title-right">
-                    <h2>Especialización</h2>
-                    <ul>
-                        <li>Inteligencia Artificial</li>
-                        <li>Computación</li>
-                        <li>Ingeniería del software</li>
-                    </ul>
-                </div>
-                <div class="skill-title-left">
-                    <h2>Lenguajes y frameworks</h2>
-                    <ul>
-                        <li>Angular</li>
-                        <li>SQL</li>
-                        <li>Java</li>
-                        <li>C++</li>
-                        <li>jQuery</li>
-                        <li>Bash</li>
-                        <li>Assembly</li>
-                    </ul>
-                </div>
-                <div class="skill-title-right">
-                    <h2>Herramientas y sistemas </h2>
-                    <ul>
-                        <li>Linux</li>
-                        <li>Git</li>
-                        <li>MacOs</li>
-                    </ul>
-                </div>
-        </div>
+        <mat-expansion-panel class="skill-set first">
+            <mat-expansion-panel-header>
+            <mat-panel-title>
+                <span class="skill-title">Technical skills</span> 
+            </mat-panel-title>
+            </mat-expansion-panel-header> <!--Only visible on open-->
+            <div class="skill-title-left">
+                <h2>Destacados</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML/CSS/JavaScript</li>
+                    <li>C</li>
+                </ul>
+            </div>
+            <div class="skill-title-right">
+                <h2>Especialización</h2>
+                <ul>
+                    <li>Inteligencia Artificial</li>
+                    <li>Computación</li>
+                    <li>Ingeniería del software</li>
+                </ul>
+            </div>
+            <div class="skill-title-left">
+                <h2>Lenguajes y frameworks</h2>
+                <ul>
+                    <li>Angular</li>
+                    <li>SQL</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>jQuery</li>
+                    <li>Bash</li>
+                    <li>Assembly</li>
+                </ul>
+            </div>
+            <div class="skill-title-right">
+                <h2>Herramientas y sistemas </h2>
+                <ul>
+                    <li>Linux</li>
+                    <li>Git</li>
+                    <li>MacOs</li>
+                </ul>
+            </div>
+        </mat-expansion-panel>
 
-        <div class="skill-set">
-            <div class="skill-title">Soft Skills</div>
+        <mat-expansion-panel class="skill-set">
+            <mat-expansion-panel-header>
+            <mat-panel-title>
+                <span class="skill-title">Soft skills</span> 
+            </mat-panel-title>
+            </mat-expansion-panel-header> <!--Only visible on open-->
             <div class="skill-title-left">
                 <ul>
                     <li>Trabajo en equipo</li>
@@ -134,17 +142,21 @@
                     <li>Organización</li>
                 </ul>
             </div>
-        </div>
+        </mat-expansion-panel>
 
-        <div class="skill-set">
-            <div class="skill-title">Idiomas</div>
+        <mat-expansion-panel class="skill-set">
+            <mat-expansion-panel-header>
+            <mat-panel-title>
+                <span class="skill-title">Idiomas</span> 
+            </mat-panel-title>
+            </mat-expansion-panel-header> <!--Only visible on open-->
             <br>
             <img class="flag" src="../../assets/icons/uk.png">
             <h2> Inglés, B2 - First</h2>
             <br>
             <img class="flag last" src="../../assets/icons/spain.png">
             <h2> Español, Nativo</h2>
-        </div>
+        </mat-expansion-panel>
     </div>
 
     <div class="about-me">
@@ -176,7 +188,7 @@
                     <h2>Email</h2>
                     <div class="section">
                         <div class="section__item">
-                            <a href="mailto:mario.lozanocortes@gmail.com" class="sm-link sm-link_padding-bottom sm-link3">
+                            <a target="_blank" rel="noopener noreferrer" href="mailto:mario.lozanocortes@gmail.com" class="sm-link sm-link_padding-bottom sm-link3">
                                 <span class="sm-link__label">lozanocortes@gmail.com</span>
                             </a>
                         </div>
@@ -192,7 +204,7 @@
                     <h2>LinkedIn</h2>
                     <div class="section">
                         <div class="section__item">
-                            <a href="https://es.wikipedia.org/wiki/Espa%C3%B1a" class="sm-link sm-link_padding-bottom sm-link3">
+                            <a target="_blank" rel="noopener noreferrer" href="https://es.wikipedia.org/wiki/Espa%C3%B1a" class="sm-link sm-link_padding-bottom sm-link3">
                                 <span class="sm-link__label">Mi LinkedIn</span>
                             </a>
                         </div>
@@ -208,7 +220,7 @@
                     <h2>Ubicación</h2>
                     <div class="section">
                         <div class="section__item">
-                            <a href="https://es.wikipedia.org/wiki/Espa%C3%B1a" class="sm-link sm-link_padding-bottom sm-link3">
+                            <a target="_blank" rel="noopener noreferrer" href="https://es.wikipedia.org/wiki/Espa%C3%B1a" class="sm-link sm-link_padding-bottom sm-link3">
                                 <span class="sm-link__label">Madrid, España</span>
                             </a>
                         </div>

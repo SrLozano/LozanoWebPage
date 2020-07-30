@@ -8,6 +8,7 @@ import { LeftTabComponent } from './left-tab/left-tab.component';
 import { RightTabComponent } from './right-tab/right-tab.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog'; 
+import {MatExpansionModule} from '@angular/material/expansion';
 import { TabHeaderComponent } from './tab-header/tab-header.component';
 import { TimelineComponent } from './timeline/timeline.component'; 
 
@@ -24,6 +25,7 @@ import { TimelineComponent } from './timeline/timeline.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
+    MatExpansionModule,
     MatButtonModule
   ],
   providers: [],
