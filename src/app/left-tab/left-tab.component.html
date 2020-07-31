@@ -13,13 +13,13 @@
 
     <!--Part for the links included at the page-->
     <div class = "page-links">
-        <div class="category"> <img class="icon" src="../../assets/icons/home.png"> <span>Inicio</span></div>
-        <div class="category"> <img class="icon" src="../../assets/icons/user-1.png"> <span>Sobre mi</span> </div>
-        <div class="category"> <img class="icon" src="../../assets/icons/atomic.png"><span>Educación</span></div>
-        <div class="category"> <img class="icon" src="../../assets/icons/monitor.png"><span>Habilidades</span></div>
-        <div class="category"> <img class="icon" src="../../assets/icons/trophy.png"><span>Reconocimientos</span> </div>
-        <div class="category"> <img class="icon" src="../../assets/icons/layers.png"><span>Experiencia</span></div>
-        <div class="category"> <img class="icon" src="../../assets/icons/chat.png"><span>Contacto</span></div>
+        <a [routerLink]="['']" fragment="inicio" ><div class="category"> <img class="icon" src="../../assets/icons/home.png">Inicio</div></a>
+        <a [routerLink]="['']" fragment="sobre"><div class="category"> <img class="icon" src="../../assets/icons/user-1.png">Sobre mi</div></a> 
+        <a [routerLink]="['']" fragment="educacion"><div class="category"> <img class="icon" src="../../assets/icons/atomic.png">Educación</div></a>
+        <a [routerLink]="['']" fragment="habilidades"><div class="category"> <img class="icon" src="../../assets/icons/monitor.png">Habilidades</div></a>
+        <a [routerLink]="['']" fragment="reconocimientos"><div class="category"> <img class="icon" src="../../assets/icons/trophy.png">Reconocimientos</div></a> 
+        <a [routerLink]="['']" fragment="experiencia"><div class="category"> <img class="icon" src="../../assets/icons/layers.png">Experiencia</div></a>
+        <a [routerLink]="['']" fragment="contacto"><div class="category"> <img class="icon" src="../../assets/icons/chat.png">Contacto</div></a>
     </div>
 
     <!--Part for the social media icons-->
