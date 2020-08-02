@@ -268,7 +268,41 @@
                 </div>
             </div>
         </div>
-        <div class="contact-right"></div>
+        
+        <!--Space for the contacts infos-->
+        <div class="contact-right">
+
+            <form class="contact-form">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Tu email</mat-label>
+                  <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+                  <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                    Please enter a valid email address
+                  </mat-error>
+                  <mat-error *ngIf="emailFormControl.hasError('required')">
+                    Email is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nombre</mat-label>
+                    <input matInput placeholder="Ex. Carolina, Mateo" value="">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Asunto</mat-label>
+                    <input matInput placeholder="Ex. Propuesta de empleo" value="">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width email-message">
+                    <mat-label>Tu mensaje</mat-label>
+                    <textarea matInput placeholder="Ex. Hola, me gustaría conocer..."></textarea>
+                  </mat-form-field>
+            </form>
+
+            <button mat-raised-button color="warn" style="float: right; margin-right: 8%; margin-top: 5%; margin-bottom: 10%;">Enviar</button>
+
+        </div>
     </div>
 </div>
 

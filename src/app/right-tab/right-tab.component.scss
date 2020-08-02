@@ -360,11 +360,16 @@
 }
 
 //The classes for the card set to fix the contact
+#contacto{
+    height: auto;
+}
+
 .contact-left{
     width: 30%;
     display: inline-block;
     margin-left: 7%;
     margin-top: 2%;
+    vertical-align: top;
 }
 
 .contact-mini{
@@ -403,6 +408,19 @@ h2{
     line-height: 0;
 }
 
+.contact-form {
+    min-width: 100px;
+    max-width: 500px;
+    width: 100%;
+    margin-top:5%;
+    margin-left: 2%;
+    margin-right: 1%;
+  }
+  
+.example-full-width {
+    width: 100%;
+  }
+  
 //General Animations
 
 /*

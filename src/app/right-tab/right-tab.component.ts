@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as myGlobals from '../../globals'; //Global variables
 import {MatDialog} from '@angular/material/dialog';
+import {FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-right-tab',
@@ -8,6 +9,11 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./right-tab.component.scss']
 })
 export class RightTabComponent implements OnInit {
+
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email,
+  ]);
 
   name = myGlobals.name;
   job = myGlobals.job;

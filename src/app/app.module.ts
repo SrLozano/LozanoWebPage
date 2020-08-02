@@ -9,8 +9,10 @@ import { RightTabComponent } from './right-tab/right-tab.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog'; 
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatInputModule} from '@angular/material/input';
 import { TabHeaderComponent } from './tab-header/tab-header.component';
 import { TimelineComponent } from './timeline/timeline.component'; 
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,9 @@ import { TimelineComponent } from './timeline/timeline.component';
     BrowserAnimationsModule,
     MatDialogModule,
     MatExpansionModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatButtonModule
   ],
   providers: [],
