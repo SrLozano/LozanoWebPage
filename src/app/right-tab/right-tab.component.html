@@ -11,8 +11,10 @@
             </div>
         </div>
         <div class="buttons">
-            <button mat-raised-button color="warn" style="margin-right:20%; padding-left: 3%; padding-right: 3%;">Ver portfolio</button>
-            <button mat-raised-button style="padding-left: 3%; padding-right: 3%;">Contrátame</button>
+            <a target="_blank" rel="noopener noreferrer" href="https://es.wikipedia.org/wiki/Espa%C3%B1a">
+                <button mat-raised-button color="warn" style="margin-right:20%; padding-left: 3%; padding-right: 3%;">Ver GitHub</button>
+            </a>
+            <a [routerLink]="['']" fragment="sobre"><button mat-raised-button style="padding-left: 3%; padding-right: 3%;">Conoce más sobre mí</button></a>
         </div>
     </div>
 
@@ -41,8 +43,8 @@
                 </div>
             </div>
             <div class="about-buttons">
-                <button mat-raised-button color="warn" style="margin-right:20%; padding-left: 3%; padding-right: 3%;">Descarga mi CV</button>
-                <button mat-raised-button color="primary" style="padding-left: 3%; padding-right: 3%;">Contratame</button>
+                <a target="_blank" href="../../assets/Documents/España.pdf"><button mat-raised-button color="warn" style="margin-right:20%; padding-left: 3%; padding-right: 3%;">Descarga mi CV</button></a>
+                <a [routerLink]="['']" fragment="contacto"> <button mat-raised-button color="primary" style="padding-left: 3%; padding-right: 3%;">Contratame</button></a>
             </div>
         </div>
     </div>
