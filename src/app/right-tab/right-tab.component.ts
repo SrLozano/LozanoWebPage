@@ -29,6 +29,12 @@ export class RightTabComponent implements OnInit {
   public contact = "Contacto"
   public main_skills = "Principales habilidades"
 
+  //Varibles for the form
+  public email:string;
+  public name_email:string;
+  public subject:string;
+  public text:string;
+
 
   constructor(public dialog: MatDialog) { }
 

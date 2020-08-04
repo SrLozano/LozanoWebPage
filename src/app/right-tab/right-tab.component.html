@@ -288,7 +288,7 @@
             <form class="contact-form">
                 <mat-form-field class="example-full-width">
                   <mat-label>Tu email</mat-label>
-                  <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+                  <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com" name="email" [(ngModel)]="email">
                   <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
                     Please enter a valid email address
                   </mat-error>
@@ -299,21 +299,21 @@
 
                 <mat-form-field class="example-full-width">
                     <mat-label>Nombre</mat-label>
-                    <input matInput placeholder="Ex. Carolina, Mateo" value="">
+                    <input matInput placeholder="Ex. Carolina, Mateo" value="" name="name_email" [(ngModel)]="name_email">
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width">
                     <mat-label>Asunto</mat-label>
-                    <input matInput placeholder="Ex. Propuesta de empleo" value="">
+                    <input matInput placeholder="Ex. Propuesta de empleo" value="" name="subject" [(ngModel)]="subject">
                 </mat-form-field>
 
                 <mat-form-field class="example-full-width email-message">
                     <mat-label>Tu mensaje</mat-label>
-                    <textarea matInput placeholder="Ex. Hola, me gustaría conocer..."></textarea>
+                    <textarea matInput placeholder="Ex. Hola, me gustaría conocer..." name="text" [(ngModel)]="text"></textarea>
                   </mat-form-field>
             </form>
 
-            <button mat-raised-button color="warn" style="float: right; margin-right: 8%; margin-top: 5%; margin-bottom: 10%;">Enviar</button>
+            <a href="mailto:mario.lozanocortes@gmail.com?Subject={{subject}}&body=Hola%20{{name}},%20soy%20{{name_email}}.%0A%0A%20%20%20{{text}}"><button mat-raised-button color="warn" style="float: right; margin-right: 8%; margin-top: 5%; margin-bottom: 10%;">Enviar</button></a>
 
         </div>
     </div>
