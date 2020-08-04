@@ -6,7 +6,7 @@
     margin-right: 5%;
     height: 100%;
     vertical-align: top;
-    margin-left: 30%;;
+    margin-left: 30%;
 }
 
 //The classes for the card set to fit the home
@@ -593,4 +593,56 @@ a.sm-link{
 
 .sm-link3:hover::after{
   transform: translate3d(0, 0, 0);
+}
+
+
+/*-------------------------------------
+---------------------------------------
+            MOBILE VIEW
+---------------------------------------
+---------------------------------------*/
+
+@media only screen and (max-width: 600px){
+  .container{
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+  }
+
+  //The classes for the card set to fit the home
+  .home{
+    background-color: rgb(50, 72, 244);
+    height: 95%;
+    border-radius: 22px;
+    color: white;
+    position: relative;
+  }
+
+  //The classes for the card set to fit the home
+  .container_name{
+      height: 80%;
+      position: relative;
+  }
+
+  .name{
+      position: absolute;
+      bottom: 50%;
+      font-size: 4.5em;
+      line-height: 1em;
+      margin-left: 10%;
+      margin-right: 10%;
+      font-weight: bold;
+  }
+
+  .description{
+      position: absolute;
+      bottom: 7%;
+      margin-left: 10%;
+      margin-right: 10%;
+      text-align: justify;
+      line-height: 1.5em;
+      font-size: 1.1em;
+  }
+
+  
 }
