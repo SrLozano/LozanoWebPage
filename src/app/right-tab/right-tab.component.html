@@ -12,9 +12,9 @@
         </div>
         <div class="buttons">
             <a target="_blank" rel="noopener noreferrer" href="https://es.wikipedia.org/wiki/Espa%C3%B1a">
-                <button mat-raised-button color="warn" style="margin-right:20%; padding-left: 3%; padding-right: 3%; margin-bottom: 5%;">Ver GitHub</button>
+                <button mat-raised-button color="warn" class="button" style="margin-right:20%; margin-bottom: 5%;">Ver GitHub</button>
             </a>
-            <a [routerLink]="['']" fragment="sobre"><button mat-raised-button style="padding-left: 3%; padding-right: 3%;">Conoce más sobre mí</button></a>
+            <a [routerLink]="['']" fragment="sobre"><button mat-raised-button class="button">Conoce más sobre mí</button></a>
         </div>
     </div>
 
@@ -43,8 +43,8 @@
                 </div>
             </div>
             <div class="about-buttons">
-                <a target="_blank" href="../../assets/Documents/España.pdf"><button mat-raised-button color="warn" style="margin-right:20%; padding-left: 3%; padding-right: 3%;">Descarga mi CV</button></a>
-                <a [routerLink]="['']" fragment="contacto"> <button mat-raised-button color="primary" style="padding-left: 3%; padding-right: 3%;">Contratame</button></a>
+                <a target="_blank" href="../../assets/Documents/España.pdf"><button mat-raised-button color="warn" class="button" style="margin-right:20%;">Descarga mi CV</button></a>
+                <a [routerLink]="['']" fragment="contacto"> <button mat-raised-button color="primary" class="button">Contratame</button></a>
             </div>
         </div>
     </div>
@@ -89,7 +89,7 @@
                 <span class="skill-title">Technical skills</span> 
             </mat-panel-title>
             </mat-expansion-panel-header> <!--Only visible on open-->
-            <div class="skill-title-left">
+            <div class="skill-title-column">
                 <h2>Destacados</h2>
                 <ul>
                     <li>Python</li>
@@ -97,7 +97,7 @@
                     <li>C</li>
                 </ul>
             </div>
-            <div class="skill-title-right">
+            <div class="skill-title-column">
                 <h2>Especialización</h2>
                 <ul>
                     <li>Inteligencia Artificial</li>
@@ -105,7 +105,7 @@
                     <li>Ingeniería del software</li>
                 </ul>
             </div>
-            <div class="skill-title-left">
+            <div class="skill-title-column">
                 <h2>Lenguajes y frameworks</h2>
                 <ul>
                     <li>Angular</li>
@@ -117,7 +117,7 @@
                     <li>Assembly</li>
                 </ul>
             </div>
-            <div class="skill-title-right">
+            <div class="skill-title-column">
                 <h2>Herramientas y sistemas </h2>
                 <ul>
                     <li>Linux</li>
@@ -133,13 +133,13 @@
                 <span class="skill-title">Soft skills</span> 
             </mat-panel-title>
             </mat-expansion-panel-header> <!--Only visible on open-->
-            <div class="skill-title-left">
+            <div class="skill-title-column">
                 <ul>
                     <li>Trabajo en equipo</li>
                     <li>Resiliencia</li>
                 </ul>
             </div>
-            <div class="skill-title-right">
+            <div class="skill-title-column">
                 <ul>
                     <li>Organización</li>
                 </ul>
@@ -152,12 +152,11 @@
                 <span class="skill-title">Idiomas</span> 
             </mat-panel-title>
             </mat-expansion-panel-header> <!--Only visible on open-->
-            <br>
             <img class="flag" src="../../assets/icons/uk.png">
-            <h2> Inglés, B2 - First</h2>
+            <h2 class="flag-title"> Inglés, B2 - First</h2>
             <br>
             <img class="flag last" src="../../assets/icons/spain.png">
-            <h2> Español, Nativo</h2>
+            <h2 class="flag-title"> Español, Nativo</h2>
         </mat-expansion-panel>
     </div>
 
@@ -307,9 +306,9 @@
                     <input matInput placeholder="Ex. Propuesta de empleo" value="" name="subject" [(ngModel)]="subject">
                 </mat-form-field>
 
-                <mat-form-field class="example-full-width email-message">
+                <mat-form-field class="example-full-width">
                     <mat-label>Tu mensaje</mat-label>
-                    <textarea matInput placeholder="Ex. Hola, me gustaría conocer..." name="text" [(ngModel)]="text"></textarea>
+                    <textarea matInput placeholder="Ex. Hola, me gustaría conocer..." name="text" rows="3" [(ngModel)]="text"></textarea>
                   </mat-form-field>
             </form>
 
