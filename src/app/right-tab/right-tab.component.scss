@@ -776,5 +776,70 @@ a.sm-link{
     min-width: 80%;
   }
 
+  //The classes for the card set to fix the contact
+  #contacto{
+    height: auto;
+  }
+
+  .contact-left{
+    width: 100%;
+    display: inline-block;
+    margin-left: 7%;
+    margin-top: 2%;
+    vertical-align: top;
+  }
+
+  .contact-mini{
+    height: 33%;
+    width: 100%;
+    padding-top: 10%;
+  }
+
+  .contact-mini-left{
+    width: 25%;
+    display: inline-block;
+
+  }
+
+  .contact-mini-right{
+    width: 75%;
+    display: inline-block;
+    padding-top: 5%;
+    vertical-align: top;
+  }
+
+  .contact-right{
+    width: 86%;
+    display: inline-block;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+  }
+
+  .contact-icon{
+    width: 60%;
+  }
+
+  .link-contact{
+    line-height: 0.5;
+  }
+
+  h2{
+    line-height: 0;
+  }
+
+  .contact-form {
+    min-width: 100px;
+    max-width: 500px;
+    width: 100%;
+    margin-top:5%;
+    margin-left: 2%;
+    margin-right: 1%;
+  }
+
+  .example-full-width {
+    width: 100%;
+  }
+
   
 }
