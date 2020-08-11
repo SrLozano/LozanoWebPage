@@ -733,7 +733,7 @@ a.sm-link{
   }
   
   .main-skill{
-    width: 25%;
+    width: 50%;
     display: inline-block;
   }
 
@@ -752,7 +752,7 @@ a.sm-link{
   }
 
   .skill-picture{
-    height: 5em;
+    height: 7em;
     width: auto;
     padding-top: 10%;
     padding-bottom: 13%;
@@ -827,5 +827,70 @@ a.sm-link{
     display: inline-block;
   }
 
-  
+  //Mobile view for the awards card
+  #reconocimientos{
+    background-color: white;
+    height: 140%;
+    border-radius: 22px;
+    margin-top: 5%;
+  }
+
+  .description-card{
+    margin-left: 16px;
+    font-weight: bold;
+  }
+
+  .back-card{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-style: italic;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Bangers');
+  *,*::before,*::after{
+  margin:0;
+  box-sizing:border-box;
+  }
+
+  .reward{
+    width: 4em;
+  }
+
+  .first_card{
+    margin-top: -15%;
+  }
+
+  .card{
+    height: 16%;
+    width: 86%;
+    transform-style:preserve-3d;
+  }
+
+  .back{
+    font-size: x-small;
+  }
+
+  .left-card{
+      display: inline-block;
+      width: 80%;
+      font-size: large;
+  }
+
+  .right-card{
+    display: inline-block;
+    width: 20%;
+  }
+
+
+  .back{
+    transform: rotateY( 180deg );
+  }
+
+  .front > p , .back > p {
+    transform:translateZ(120px);
+  }
+
+  .card:hover{
+    transform:rotateY(180deg);
+  }
 }
