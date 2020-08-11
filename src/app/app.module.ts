@@ -13,6 +13,7 @@ import {MatInputModule} from '@angular/material/input';
 import { TabHeaderComponent } from './tab-header/tab-header.component';
 import { TimelineComponent } from './timeline/timeline.component'; 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { SpeedDialFabComponent } from './speed-dial-fab/speed-dial-fab.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     LeftTabComponent,
     RightTabComponent,
     TabHeaderComponent,
-    TimelineComponent
+    TimelineComponent,
+    SpeedDialFabComponent
   ],
   imports: [
     BrowserModule,

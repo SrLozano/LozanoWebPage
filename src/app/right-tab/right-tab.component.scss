@@ -615,7 +615,7 @@ a.sm-link{
   //The classes for the card set to fit the home
   .home{
     background-color: rgb(50, 72, 244);
-    height: 95%;
+    height: 100%;
     border-radius: 22px;
     color: white;
     position: relative;
@@ -881,16 +881,17 @@ a.sm-link{
     width: 20%;
   }
 
+}
 
+
+/*-------------------------------------
+---------------------------------------
+            TABLET VIEW
+---------------------------------------
+---------------------------------------*/
+
+@media only screen and (max-width: 1025px){
   .back{
-    transform: rotateY( 180deg );
-  }
-
-  .front > p , .back > p {
-    transform:translateZ(120px);
-  }
-
-  .card:hover{
-    transform:rotateY(180deg);
+    font-size: x-small;
   }
 }
