@@ -9,26 +9,34 @@ export class AppComponent {
   title = 'LozanoWebPage';
   FabOptions = {
     buttons: [
+
       {
-        icon: 'home'
+        icon: 'contact_phone',
+        link: "contacto"
       },
       {
-        icon: 'person'
+        icon: 'business_center',
+        link: "experiencia"
       },
       {
-        icon: 'school'
+        icon: 'emoji_events',
+        link: "reconocimientos"
       },
       {
-        icon: 'desktop_mac'
+        icon: 'desktop_mac',
+        link: "habilidades"
       },
       {
-        icon: 'emoji_events'
+        icon: 'school',
+        link: "educacion"
       },
       {
-        icon: 'business_center'
+        icon: 'person',
+        link: "sobre"
       },
       {
-        icon: 'contact_phone'
+        icon: 'home',
+        link: "inicio"
       }
     ]
   };

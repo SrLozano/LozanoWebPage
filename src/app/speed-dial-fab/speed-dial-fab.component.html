@@ -14,7 +14,9 @@
       mat-mini-fab
       class="fab-secondary"
       color="secondary">
-      <i class="material-icons">{{btn.icon}}</i>
+      <a [routerLink]="['']" fragment="{{btn.link}}">
+        <i class="material-icons">{{btn.icon}}</i>
+      </a>
     </button>
   </div>
 </div>
