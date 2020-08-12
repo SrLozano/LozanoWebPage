@@ -20,6 +20,7 @@
         <a [routerLink]="['']" fragment="reconocimientos"><div class="category"> <img class="icon" src="../../assets/icons/trophy.png">Reconocimientos</div></a> 
         <a [routerLink]="['']" fragment="experiencia"><div class="category"> <img class="icon" src="../../assets/icons/layers.png">Experiencia</div></a>
         <a [routerLink]="['']" fragment="contacto"><div class="category"> <img class="icon" src="../../assets/icons/chat.png">Contacto</div></a>
+        <a (click)=openNav()><div class="category"><img class="icon" src="../../assets/icons/settings.png">Ajustes</div></a>
     </div>
 
     <!--Part for the social media icons-->
@@ -32,3 +33,31 @@
     </div>
 
 </div>
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" (click)=closeNav()>&times;</a>
+    <div class="overlay-content">
+        <span class="title_settings">Settings</span><br>
+        <img class="selector" src="../../assets/icons/sun.png">
+        <div class="aux-container">
+            <div class="aux-top"><mat-slide-toggle></mat-slide-toggle></div>
+            <!--TRANSPARENT DIV-->
+            <div class="aux-bottom">hello</div>
+        </div>
+        <img class="selector" src="../../assets/icons/moon.png">
+        
+        <br>
+
+        <div class="aux">
+            <img class="flags" src="../../assets/icons/spain.png">
+            <div class="aux-container">
+                <div class="aux-top"><mat-slide-toggle></mat-slide-toggle></div>
+                <!--TRANSPARENT DIV-->
+                <div class="aux-bottom">hello</div>
+            </div>
+            <img class="flags" src="../../assets/icons/uk.png">
+        </div>
+    
+    </div>
+</div>
+  

@@ -9,7 +9,10 @@ export class AppComponent {
   title = 'LozanoWebPage';
   FabOptions = {
     buttons: [
-
+      {
+        icon: 'settings',
+        link: "contacto"
+      },
       {
         icon: 'contact_phone',
         link: "contacto"

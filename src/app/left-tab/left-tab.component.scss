@@ -107,7 +107,87 @@ a{
     transform         : rotate(360deg) scale(1.4); /* Firefox 16+, IE 10+, Opera */
 }
 
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 30, 227, 0.92);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
 
+  .title_settings{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    inline-size: block;
+    line-height: 1em;
+  }
+
+  mat-slide-toggle{
+      margin-top: 250%;
+  }
+
+  .selector{
+    height: 60px;
+    margin: 0 5%;
+  }
+
+  .flags{
+    height: 60px;
+    margin: 0 5%;
+  }
+
+  .aux{
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  .aux-top{
+    height: 50%;
+  }
+
+  .aux-bottom{
+     height: 50%; 
+     color: rgba(0, 30, 227, 0);
+}
+
+  .aux-container{
+    display: inline-block;
+  }
+
+  
 /*-------------------------------------
 ---------------------------------------
             MOBILE VIEW
@@ -117,5 +197,11 @@ a{
 @media only screen and (max-width: 600px){
     .main-tab{
         display: none;
+    }
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
     }
 }

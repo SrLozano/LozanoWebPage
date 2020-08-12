@@ -10,6 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog'; 
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatInputModule} from '@angular/material/input';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { TabHeaderComponent } from './tab-header/tab-header.component';
 import { TimelineComponent } from './timeline/timeline.component'; 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -31,6 +32,7 @@ import { SpeedDialFabComponent } from './speed-dial-fab/speed-dial-fab.component
     MatDialogModule,
     MatExpansionModule,
     MatInputModule,
+    MatSlideToggleModule,
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule
