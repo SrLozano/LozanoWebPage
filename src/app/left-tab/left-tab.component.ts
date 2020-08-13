@@ -9,6 +9,9 @@ import * as myGlobals from '../../globals'; //Global variables
 })
 export class LeftTabComponent implements OnInit {
 
+  isChecked1 = true;
+  isChecked2 = true;
+
   //Importing the globals variables
   name = myGlobals.name;
   job = myGlobals.job;
@@ -24,5 +27,19 @@ export class LeftTabComponent implements OnInit {
   closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
+
+  toDark(){
+    document.getElementById("main-tab").style.backgroundColor = "#151C21";
+  }
+
+  dark(){
+    console.log(this.isChecked1);
+  }
+
+  language(){
+    console.log(this.isChecked2);
+  }
+
+
 
 }

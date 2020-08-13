@@ -1,4 +1,4 @@
-<div class = "main-tab">
+<div class = "main-tab" id="main-tab">
     <!--Part for the profile picture-->
     <div class = "face-image">
         <img class="profile-picture" src="../../assets/images/cara-hombre-sonriendo.jpg">
@@ -40,7 +40,7 @@
         <span class="title_settings">Settings</span><br>
         <img class="selector" src="../../assets/icons/sun.png">
         <div class="aux-container">
-            <div class="aux-top"><mat-slide-toggle></mat-slide-toggle></div>
+            <div class="aux-top" (click)="dark()"><mat-slide-toggle [(ngModel)]="isChecked1"></mat-slide-toggle></div>
             <!--TRANSPARENT DIV-->
             <div class="aux-bottom">hello</div>
         </div>
@@ -51,7 +51,7 @@
         <div class="aux">
             <img class="flags" src="../../assets/icons/spain.png">
             <div class="aux-container">
-                <div class="aux-top"><mat-slide-toggle></mat-slide-toggle></div>
+                <div class="aux-top" (click)="language()"><mat-slide-toggle [(ngModel)]="isChecked2"></mat-slide-toggle></div>
                 <!--TRANSPARENT DIV-->
                 <div class="aux-bottom">hello</div>
             </div>

@@ -1,9 +1,9 @@
 <!--The container contains the whole set of tabs-->
-<div class="container">
+<div class="container" id="container">
     <!--The first tab is set to containt the home-->
     <div id="inicio" class="home">
         <div class="container_name">
-            <div class="name">
+            <div class="name" (click)=darkModeRight()>
                 Soy {{name}}
             </div>
             <div class="description">
@@ -57,7 +57,7 @@
     </div>
 
     <!--This tab is dedicated to the main skill set-->
-    <div id="habilidades" class="main-skills">
+    <div id="habilidades1" class="main-skills">
         <div class="main-skill">            
             <img class="skill-picture" src="../../assets/icons/python.png">
             <div class="text-skill"> Python </div>

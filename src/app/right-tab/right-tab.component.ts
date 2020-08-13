@@ -1,11 +1,16 @@
+import { element, by } from 'protractor';
 import { Component, OnInit } from '@angular/core';
 import * as myGlobals from '../../globals'; //Global variables
 import {MatDialog} from '@angular/material/dialog';
 import {FormControl, Validators} from '@angular/forms';
+import {LeftTabComponent} from '../left-tab/left-tab.component'
+import {TabHeaderComponent} from '../tab-header/tab-header.component'
+
 
 @Component({
   selector: 'app-right-tab',
   templateUrl: './right-tab.component.html',
+  providers: [LeftTabComponent, TabHeaderComponent],
   styleUrls: ['./right-tab.component.scss']
 })
 export class RightTabComponent implements OnInit {
@@ -36,7 +41,8 @@ export class RightTabComponent implements OnInit {
   public text:string;
 
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, public leftTab:LeftTabComponent, 
+    public tabHeader:TabHeaderComponent) { }
 
   //Function to open the popup
   openDialog(variable: number) {
@@ -52,6 +58,31 @@ export class RightTabComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
+  }
+
+  //Functions that implements the dark mode on this
+  darkModeRight(){
+    // Change text
+    document.getElementById("container").style.color = "white";
+    //Change inicio
+    document.getElementById("inicio").style.backgroundColor = "#151C21";
+    //Change sobre
+    document.getElementById("sobre").style.backgroundColor = "#151C21";
+    //Change educacion
+    document.getElementById("educacion").style.backgroundColor = "#151C21";
+    //Change habilidades1
+    document.getElementById("habilidades1").style.backgroundColor = "#151C21";
+    //Change habilidades
+    document.getElementById("habilidades").style.backgroundColor = "#151C21";
+    //Change reconocimientos
+    document.getElementById("reconocimientos").style.backgroundColor = "#151C21";
+    //Change experiencia
+    document.getElementById("experiencia").style.backgroundColor = "#151C21";
+    //Change contacto
+    document.getElementById("contacto").style.backgroundColor = "#151C21";
+    //Change left-tab
+    this.leftTab.toDark();
+    this.tabHeader.toDark();
   }
 
   ngOnInit(): void {
