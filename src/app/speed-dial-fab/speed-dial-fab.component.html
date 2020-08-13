@@ -14,11 +14,14 @@
       mat-mini-fab
       class="fab-secondary"
       color="secondary">
-      <a [routerLink]="['']" fragment="{{btn.link}}">
+      <a *ngIf="btn.icon != 'settings'" [routerLink]="['']" fragment="{{btn.link}}">
+        <i class="material-icons">{{btn.icon}}</i>
+      </a>
+
+      <a *ngIf="btn.icon == 'settings'" (click)="open()">
         <i class="material-icons">{{btn.icon}}</i>
       </a>
     </button>
-
 
   </div>
 </div>
