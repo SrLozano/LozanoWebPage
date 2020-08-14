@@ -1,11 +1,10 @@
 import { element, by } from 'protractor';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2, Inject } from '@angular/core';
 import * as myGlobals from '../../globals'; //Global variables
 import {MatDialog} from '@angular/material/dialog';
 import {FormControl, Validators} from '@angular/forms';
 import {LeftTabComponent} from '../left-tab/left-tab.component'
 import {TabHeaderComponent} from '../tab-header/tab-header.component'
-
 
 @Component({
   selector: 'app-right-tab',
@@ -42,7 +41,7 @@ export class RightTabComponent implements OnInit {
 
 
   constructor(public dialog: MatDialog, public leftTab:LeftTabComponent, 
-    public tabHeader:TabHeaderComponent) { }
+    public tabHeader:TabHeaderComponent, private renderer: Renderer2) { }
 
   //Function to open the popup
   openDialog(variable: number) {
@@ -62,6 +61,8 @@ export class RightTabComponent implements OnInit {
 
   //Functions that implements the dark mode on this
   darkModeRight(){
+    // Change background
+    this.renderer.setStyle(document.body, 'background-color', "#000000");
     // Change text
     document.getElementById("container").style.color = "white";
     //Change inicio
@@ -98,6 +99,8 @@ export class RightTabComponent implements OnInit {
     document.getElementById("experiencia").style.backgroundColor = "#151C21";
     //Change contacto
     document.getElementById("contacto").style.backgroundColor = "#151C21";
+    document.getElementById("light-form").style.display = "none";
+    document.getElementById("dark-form").style.display = "block";
     //document.getElementById("mat-form-field").style.backgroundColor = "white";
     //Change left-tab
     this.leftTab.toDark();

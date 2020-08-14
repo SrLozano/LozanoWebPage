@@ -284,7 +284,35 @@
         <!--Space for the contacts infos-->
         <div class="contact-right">
 
-            <form class="contact-form">
+            <form id="light-form" class="contact-form" >
+                <mat-form-field  appearance= 'fill' class="example-full-width">
+                  <mat-label>Tu email</mat-label>
+                  <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com" name="email" [(ngModel)]="email">
+                  <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                    Please enter a valid email address
+                  </mat-error>
+                  <mat-error *ngIf="emailFormControl.hasError('required')">
+                    Email is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance= 'fill' class="example-full-width">
+                    <mat-label>Nombre</mat-label>
+                    <input matInput placeholder="Ex. Carolina, Mateo" value="" name="name_email" [(ngModel)]="name_email">
+                </mat-form-field>
+
+                <mat-form-field appearance= 'fill'  class="example-full-width">
+                    <mat-label>Asunto</mat-label>
+                    <input matInput placeholder="Ex. Propuesta de empleo" value="" name="subject" [(ngModel)]="subject">
+                </mat-form-field>
+
+                <mat-form-field appearance= 'fill' class="example-full-width">
+                    <mat-label>Tu mensaje</mat-label>
+                    <textarea matInput placeholder="Ex. Hola, me gustaría conocer..." name="text" rows="3" [(ngModel)]="text"></textarea>
+                  </mat-form-field>
+            </form>
+
+            <form id="dark-form" class="contact-form" >
                 <mat-form-field class="example-full-width">
                   <mat-label>Tu email</mat-label>
                   <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com" name="email" [(ngModel)]="email">
