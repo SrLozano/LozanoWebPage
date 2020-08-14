@@ -74,12 +74,31 @@ export class RightTabComponent implements OnInit {
     document.getElementById("habilidades1").style.backgroundColor = "#151C21";
     //Change habilidades
     document.getElementById("habilidades").style.backgroundColor = "#151C21";
+    var skill = document.getElementsByClassName("skill-set") as HTMLCollectionOf<HTMLElement>;
+    for(var i=0, len=skill.length; i<len; i++)
+    { 
+        skill[i].style.backgroundColor = "black";
+        skill[i].style.color = "white";
+    }
     //Change reconocimientos
     document.getElementById("reconocimientos").style.backgroundColor = "#151C21";
+    var rewards = document.getElementsByClassName("front") as HTMLCollectionOf<HTMLElement>;
+    for(var i=0, len=rewards.length; i<len; i++)
+    { 
+      rewards[i].style.backgroundColor = "black";
+      rewards[i].style.color = "white";
+    }
+    var rewards = document.getElementsByClassName("back") as HTMLCollectionOf<HTMLElement>;
+    for(var i=0, len=rewards.length; i<len; i++)
+    { 
+      rewards[i].style.backgroundColor = "black";
+      rewards[i].style.color = "white";
+    }
     //Change experiencia
     document.getElementById("experiencia").style.backgroundColor = "#151C21";
     //Change contacto
     document.getElementById("contacto").style.backgroundColor = "#151C21";
+    //document.getElementById("mat-form-field").style.backgroundColor = "white";
     //Change left-tab
     this.leftTab.toDark();
     this.tabHeader.toDark();
