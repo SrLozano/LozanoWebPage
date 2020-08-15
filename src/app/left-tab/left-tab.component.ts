@@ -11,8 +11,8 @@ import {RightTabComponent} from '../right-tab/right-tab.component'
 })
 export class LeftTabComponent implements OnInit {
 
-  isChecked1 = true;
-  isChecked2 = true;
+  isCheckedDark = true;
+  isChecked2 = false;
 
   //Importing the globals variables
   name = myGlobals.name;
@@ -32,17 +32,23 @@ export class LeftTabComponent implements OnInit {
   }
 
   toDark(){
-    this.rightTab.darkModeRight();
-    this.tabHeader.toDark();
-    document.getElementById("main-tab").style.backgroundColor = "#151C21";
+    if(this.isCheckedDark == true){ //Dark
+      //We change the right tab, the headers and the left tab
+      console.log("Dark mode.....");
+      this.rightTab.darkModeRight();
+      this.tabHeader.toDark();
+      document.getElementById("main-tab").style.backgroundColor = "#151C21";
+    } else{ //Light
+      //We change the right tab, the headers and the left tab
+      console.log("Light mode.....");
+      this.tabHeader.toLight();
+      this.rightTab.lightModeRight();
+      document.getElementById("main-tab").style.backgroundColor = "#3248F4";
+    }
+   
   }
-
-  dark(){
-    console.log(this.isChecked1);
-  }
-
+  
   language(){
-    console.log(this.isChecked2);
   }
 
 

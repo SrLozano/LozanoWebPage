@@ -23,4 +23,11 @@ export class TabHeaderComponent implements OnInit {
     }
   }
 
+  toLight(){
+    for(var i=0, len=this.header.length; i<len; i++)
+    { 
+        this.header[i].style.color = "black";
+    }
+  }
+
 }

@@ -102,6 +102,49 @@ export class RightTabComponent implements OnInit {
     //this.tabHeader.toDark();
   }
 
+  lightModeRight(){
+    // Change background
+    this.renderer.setStyle(document.body, 'background-color', "#F3F6FF");
+    // Change text
+    document.getElementById("container").style.color = "black";
+    //Change inicio
+    document.getElementById("inicio").style.backgroundColor = "#3248F4";
+    //Change sobre
+    document.getElementById("sobre").style.backgroundColor = "white";
+    //Change educacion
+    document.getElementById("educacion").style.backgroundColor = "white";
+    //Change habilidades1
+    document.getElementById("habilidades1").style.backgroundColor = "#3248F4";
+    //Change habilidades
+    document.getElementById("habilidades").style.backgroundColor = "white";
+    var skill = document.getElementsByClassName("skill-set") as HTMLCollectionOf<HTMLElement>;
+    for(var i=0, len=skill.length; i<len; i++)
+    { 
+        skill[i].style.backgroundColor = "white";
+        skill[i].style.color = "black";
+    }
+    //Change reconocimientos
+    document.getElementById("reconocimientos").style.backgroundColor = "white";
+    var rewards = document.getElementsByClassName("front") as HTMLCollectionOf<HTMLElement>;
+    for(var i=0, len=rewards.length; i<len; i++)
+    { 
+      rewards[i].style.backgroundColor = "white";
+      rewards[i].style.color = "black";
+    }
+    var rewards = document.getElementsByClassName("back") as HTMLCollectionOf<HTMLElement>;
+    for(var i=0, len=rewards.length; i<len; i++)
+    { 
+      rewards[i].style.backgroundColor = "white";
+      rewards[i].style.color = "black";
+    }
+    //Change experiencia
+    document.getElementById("experiencia").style.backgroundColor = "white";
+    //Change contacto
+    document.getElementById("contacto").style.backgroundColor = "white";
+    document.getElementById("light-form").style.display = "block";
+    document.getElementById("dark-form").style.display = "none";
+  }
+
   ngOnInit(): void {
   }
 
