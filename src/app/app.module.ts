@@ -37,7 +37,7 @@ import { SpeedDialFabComponent } from './speed-dial-fab/speed-dial-fab.component
     ReactiveFormsModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [TabHeaderComponent, RightTabComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
