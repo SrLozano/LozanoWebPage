@@ -465,6 +465,7 @@ a.sm-link{
 
 .sm-link__label{
   display: block;
+  font-size: x-small;
 }
 
 /* sm-link_padding-all */ 
@@ -899,6 +900,11 @@ a.sm-link{
   .right-card{
     display: inline-block;
     width: 20%;
+  }
+
+  .sm-link__label{
+    display: block;
+    font-size: medium;
   }
 
 }
