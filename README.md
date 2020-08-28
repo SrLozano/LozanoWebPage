@@ -9,7 +9,7 @@ Angular CLI: 9.0.1 or higher
 
 
 ## Run it 🐍⚙️
-- The code is implemented in Angular 10 so in order to serve it to the browser you can use:
+- The code is implemented in Angular 9 so in order to serve it to the browser you can use:
  ```bash
 ng serve
 ```
