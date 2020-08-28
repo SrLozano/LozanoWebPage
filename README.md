@@ -1,27 +1,31 @@
-# LozanoWebPage
+# Resume website 
+This project aims to be used as an online resume developed on Angular 9. The code is open, so everyone who wants to can use it. We just ask that the project must be attributed to the original authors.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
+## Authors 🧑‍💻
+This website project was co-author by **Enrique Lozano Cebriano** and **Mario Lozano Cortés**. Computer Science and Engineering students at *Carlos III University of Madrid*.
 
-## Development server
+## Requirements 📦
+Angular CLI: 9.0.1 or higher
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Run it 🐍⚙️
+- The code is implemented in Angular 10 so in order to serve it to the browser you can use:
+ ```bash
+ng serve
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ ```bash
+ng serve
+```
 
-## Build
+## The style 🦄
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The website follows Material, the design system created by Google to help teams build high-quality digital experiences.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Aditional info 🧭
 
-## Running end-to-end tests
+More information about Angular can be found [here](https://angular.io/).
+More information about Angular Material can be found [here](https://material.angular.io/).
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
